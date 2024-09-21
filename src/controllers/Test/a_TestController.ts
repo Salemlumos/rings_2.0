@@ -2,10 +2,10 @@ import { Controller, Get, Route, Tags } from "tsoa";
 
 @Route("api/test")
 @Tags("Testes")
-class TestController extends Controller{
+export class TestController extends Controller{
 
     @Get("/helloWorld")
-    public static async helloWorld():Promise<any>{
+    public async helloWorld():Promise<any>{
         try {
             
             return {
@@ -25,4 +25,3 @@ class TestController extends Controller{
 };
 
 
-export default TestController;
