@@ -5,6 +5,8 @@ import cors from "cors";
 import dataSource from "../ormconfig";
 import setupSwagger from "./config/swagger";
 
+import { RegisterRoutes } from './routes/routes'; 
+
 import TestRoutes from "./controllers/Test/routes";
 
 dotenv.config();
@@ -38,7 +40,7 @@ dataSource
                     console.log(`Api disponível em  http://localhost:${port}`)
                 });
 
-            app.use('/api',TestRoutes);
+            RegisterRoutes(app);
 
         }).catch((error)=>{
     console.log(error);
