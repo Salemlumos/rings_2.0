@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tsoa/runtime':
+        specifier: ^6.4.0
+        version: 6.4.0
       bcrypt:
         specifier: ^5.1.1
         version: 5.1.1
