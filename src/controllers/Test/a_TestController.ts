@@ -1,6 +1,6 @@
 import { Controller, Get, Route, Tags } from "tsoa";
 
-@Route("/test")
+@Route("api/test")
 @Tags("Testes")
 class TestController extends Controller{
 
@@ -10,7 +10,7 @@ class TestController extends Controller{
             
             return {
                 success: true,
-                status: "Hello World",
+                status: "im alive",
                 data: [],
               };
         } catch (error) {
