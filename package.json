@@ -7,7 +7,7 @@
     "start": "nodemon src/index.ts",
     "build": "tsc",
     "swagger": "tsoa spec && tsoa routes",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
